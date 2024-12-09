@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake News Detection</title>
+  <link rel="stylesheet" href="/static/color.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Fake News Detection</h1>
+    <p>Enter the text you want to analyze for fake news:</p>
+    <form id="fake-news-form"  method="POST" action="/search">
+      <textarea id="link" name="link2"  placeholder="Type your link here..." required></textarea>
+      <button type="submit">Check Now</button>
+    </form>
+    <div id="result">
+      {% block result %} {% endblock %}
+    </div>
+  </div>
+</body>
+</html>
